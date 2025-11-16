@@ -1,2 +1,1 @@
-// Ramdas + Balram
-alert("Hello Dominators")
+// Ramdas + Balr
