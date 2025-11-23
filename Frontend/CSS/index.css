@@ -1,19 +1,113 @@
+<<<<<<< HEAD
 #bg{
-    background-color: rgb(224, 196, 144);
+    background-color: rgb(159, 217, 240);
     width: 180vh;
     height: 90vh;
 }
 body{
-    background-color:rgb(168, 221, 241);
+    background-color:rgb(132, 170, 208);
 }
 .cards{
-    background-color: antiquewhite;
+    background-color: rgb(173, 119, 95);
     width:200px;
     height:120px;
     border-radius:10px;
-    box-shadow:0 0 10px gray;
+    box-shadow:0 0 10px rgb(225, 214, 214);
     display:flex;
     align-items: center;
     justify-self: center;
     font-weight: 40px;
+}
+=======
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(144, 219, 167);
+}
+
+.header {
+    background-color: rgb(233, 216, 206);
+  padding: 0px 20px 0px 20px;
+  margin: 5px;
+  text-decoration: none;
+  display: flex;
+  border: 2px solid black;
+  gap: 20px;
+  justify-content: end;
+}
+.logo {
+  margin-right: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+    color:rgb(0, 31, 188);
+}
+>>>>>>> 417f946c147c02d48a2b23cafa504abff33098ee
+/* dashboard*/
+.dashboard{
+    padding: 20px;
+}
+.card-container{
+    display: flex;
+    gap:40px;
+    margin-bottom:30;
+    align-items: flex-start;
+}
+.box{
+    background-color:rgb(197, 223, 197);
+    width: 100px;
+    padding:500px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(128, 92, 92);
+    text-align:center;
+    font-weight:bold;
+     border: 2px solid rgb(6, 3, 3);
+
+}
+.cards{
+    background-color:rgb(213, 224, 167);
+    width: 100px;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+}
+.item{
+    background-color:rgb(241, 195, 198);
+    width: 100px;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+
+}
+.total{
+    background-color:rgb(196, 172, 174);
+    width: 100px;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+     border: 2px solid rgb(6, 3, 3);
+
+}
+.pending{
+    background-color:rgb(197, 223, 197);
+    width: 100px;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(128, 92, 92);
+    text-align:left;
+    font-weight:bold;
+     border: 2px solid rgb(6, 3, 3);
+
 }
