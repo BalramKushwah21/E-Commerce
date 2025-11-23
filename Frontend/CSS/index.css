@@ -1,4 +1,19 @@
-
+#bg{
+    background-color: rgb(224, 196, 144);
+    width: 180vh;
+    height: 90vh;
+}
 body{
-    background-color:skyblue;
+    background-color:rgb(168, 221, 241);
+}
+.cards{
+    background-color: antiquewhite;
+    width:200px;
+    height:120px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    font-weight: 40px;
 }
