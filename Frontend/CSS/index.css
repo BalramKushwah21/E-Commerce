@@ -1,11 +1,12 @@
-<<<<<<< HEAD
+
 #bg{
-    background-color: rgb(159, 217, 240);
-    width: 180vh;
+    background-color: rgb(128, 187, 211);
+    width: 190vh;
     height: 90vh;
 }
 body{
-    background-color:rgb(132, 170, 208);
+    
+    background-color:rgb(112, 157, 201);
 }
 .cards{
     background-color: rgb(173, 119, 95);
@@ -18,11 +19,12 @@ body{
     justify-self: center;
     font-weight: 40px;
 }
-=======
+
 body {
+    
   margin: 0;
   padding: 0;
-  background-color: rgb(144, 219, 167);
+  background-color: rgb(109, 177, 197);
 }
 
 .header {
@@ -46,7 +48,6 @@ a {
 a:hover{
     color:rgb(0, 31, 188);
 }
->>>>>>> 417f946c147c02d48a2b23cafa504abff33098ee
 /* dashboard*/
 .dashboard{
     padding: 20px;
@@ -59,7 +60,7 @@ a:hover{
 }
 .box{
     background-color:rgb(197, 223, 197);
-    width: 100px;
+    width: 10px;
     padding:500px;
     border-radius:10px;
     box-shadow:0 0 10px rgb(128, 92, 92);
@@ -110,6 +111,38 @@ a:hover{
     font-weight:bold;
      border: 2px solid rgb(6, 3, 3);
 
+}
+.cards:hover {
+    background-color: rgb(131, 181, 98);
+}
+
+.item:hover {
+    background-color: rgb(167, 93, 93);
+}
+
+.total:hover {
+    background-color: rgb(102, 169, 111);
+}
+
+.pending:hover {
+    background-color: rgb(191, 215, 97);
+}
+
+/*table*/
+.order-table{
+    width:50%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px gray;;
+}
+.order-table th,.order-table td{
+    border:1px solid gray;
+    padding:10px;
+    text-align:center;
+}
+.order-table th{
+    background-color: antiquewhite;
+    font-size:18px;
 }
 
 
