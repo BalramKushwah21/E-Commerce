@@ -112,6 +112,7 @@ a:hover{
      border: 2px solid rgb(6, 3, 3);
 
 }
+
 .cards:hover {
     background-color: rgb(131, 181, 98);
 }
@@ -143,15 +144,4 @@ a:hover{
 .order-table th{
     background-color: antiquewhite;
     font-size:18px;
-}
-
-
-/* For copywrite  */
-.copy_footer{
-    text-align: center;
-    padding: 0%;
-    background-color: #9d9595;
-    bottom: 0px;
-    /* width: 100%; */
-    position: fixed;
 }
