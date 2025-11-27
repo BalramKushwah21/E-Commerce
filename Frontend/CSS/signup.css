@@ -4,32 +4,22 @@ body{
 
 /* for box */
 .signup_box{
-    width: 30vw;
-    height: 50vw;
+    width: 50%;
+    height: 50%;
     padding: 20px;
     margin: auto;
     border: 2px solid black;
     background-color: azure;
     border-radius:5%;
-
+    position: relative;
 } 
 
 /* for item which is inside the box */
 h1 {
     text-align: center;
-
-
-                /* we can right this type also */
-    /*display: flex;
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column;
-    */ 
 }
 
-h{
-    left: 30px;
-}
+
 
 /* for checkbox */
 #agree{
@@ -44,67 +34,28 @@ h{
 }
 
 #create_acc_small_box{
-    width: 30vw;
+    width: 35;
     height: 4.35vh;
     background-color: black ;
     border-radius: 11%;
+    font-size: small;
 }
 
 h2{
     color: white;
     text-align: center;
+    cursor: pointer;
 }
-
-/* .google_login_box{
-    text-align: left;
-    margin-top: 20px;
-} */
-
- /* .google-btn{
-    width: 40%;
-    padding: 10px;
-    border: 1px solid red;
-    background-color: beige;
-    border-radius: 5%;
-    font-size: 15px;
-    display: left;
-    align-items: left;
-    gap: 10px;
-    cursor: pointer;
-}  */
-/* .google-btn img.icon{
-    width: 20px;
-    } */
-
-/* .facebook_login_box{
-    text-align:right;
-    margin-top: 20px;
-} */
-/* .facebook-btn{
-    width: 40%;
-    padding: 10px;
-    border-radius: 5%;
-    font-size: 15px;
-    display: right;
-    align-items: center;
-    border: 1px solid red;
-    background-color: beige;
-    gap: 10px;
-    cursor: pointer;
-} */
-/* .facebook-btn img.icon {
-    width:27px;   
-} */
 
 .continue_box{
     text-align: center;
-    margin-top: 20px;   
+    margin-top: 5px;   
 }
 .google-btn , .facebook-btn{
-    width: 40%;
+    width: 45%;
     padding: 10px;
     border-radius: 5%;
-    font-size: 15px;
+    font-size: 12px;
     display: right;
     align-items: center;
     border: 1px solid red;
@@ -113,6 +64,6 @@ h2{
     cursor: pointer;
 }
 .google-btn img.icon , .facebook-btn img.icon {
-    width:20px; 
+    width:15px; 
     
 }
