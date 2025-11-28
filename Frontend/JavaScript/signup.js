@@ -8,7 +8,7 @@ function submit_form(){
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ name, mobile, email })
     })
-    // .then(res => res.json())
-    // .then(data => alert("OTP Sent: " + data.otp))
-    // .catch(err => console.error(err));
+    .then(res => res.json())
+    .then(data => alert("OTP Sent: " + data.otp))
+    .catch(err => console.error(err));
 }
