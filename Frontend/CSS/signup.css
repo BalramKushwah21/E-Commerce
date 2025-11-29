@@ -1,26 +1,30 @@
 body{
-    background-color: #e7dada;
+    background-image: url(../Res/product_images/icon/signup_bg1.webp);
 }
 
 /* for box */
 .signup_box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
     width: 50%;
     height: 50%;
-    padding: 20px;
     margin: auto;
     border: 2px solid black;
     background-color: white;
     border-radius:5%;
     position: relative;
-} 
+}
+
 
 /* for item which is inside the box */
-h1 {
+h1,form{
     text-align: center;
+    padding: 10px;
 }
 
 #name ,#number ,#email {
-    border-radius:10px ;
+    border-radius:5px ;
 }
 
 
