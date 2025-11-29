@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Login Page</title>
+    <style>
+        /* Poore page ka background */
+        body {
+            background-color: #f0f8ff;
+            /* Light blue */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Login box styling */
+        .login_box {
+            background-color: #ffffff;
+            /* White box */
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #0a3d62;
+            /* Dark blue */
+            margin-bottom: 20px;
+        }
+
+        /* Input fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Checkbox */
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Login button */
+        #login_button {
+            width: 95%;
+            padding: 10px;
+            background-color: #0a3d62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #login_button:hover {
+            background-color: #07406c;
+        }
+
+        /* Continue with line */
+        .continue_line {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        /* Social buttons */
+        .continue_box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .google-btn,
+        .facebook-btn {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .google-btn img,
+        .facebook-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login_box">
+        <h1>Login Page</h1>
+
+        <form action="../JavaScript/login.js" method="post">
+            <label for="email">Enter your email or username</label><br>
+            <input type="text" id="email" name="email" placeholder="Email / Username" required>
+            <br>
+
+            <label for="password">Enter your password</label><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <br>
+
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to the terms and conditions.</label>
+            <br><br>
+
+            <button type="submit" id="login_button">LOGIN</button>
+
+            <div class="continue_line">-------Continue With-------</div>
+
+            <div class="continue_box">
+                <button type="button" class="google-btn">
+                    <img src="https://www.svgrepo.com/show/355037/google.svg" class="icon">
+                    Google
+                </button>
+
+                <button type="button" class="facebook-btn">
+                    <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" class="icon">
+                    Facebook
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 My Website. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.product_header{
+    border: 2px solid black;
+    width: fill-content;
+    background-color: rgb(240, 193, 193);
+    gap: 10%;
+    position: relative;
+    display: flex;
+}
