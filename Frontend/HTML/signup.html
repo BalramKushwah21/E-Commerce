@@ -1,2 +1,70 @@
-<!-- Balram -->
- 
+<!-- Ramdas -->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width , initial-scale=1.0">
+    <title>E-commerce SignUp page</title>
+    <link rel="stylesheet" href = "../CSS/signup.css">
+</head>
+    <div class="signup_box" type="box">
+
+        <h1 style="color: darkblue; font-weight: bold ;">WELCOME </h>
+
+        <h1 > SignUp Page </h1>
+
+        <form action="../JavaScript/signup.js" method="post">
+
+         <form action="/submit" method="post"> 
+        <h>Enter your name</h>
+        <br>
+        <!-- <label for="name ">Enter your name</label> -->
+        <input type="text" id ="name" name = "name" placeholder="Your name" required>
+        <br><br>
+
+        <h>Enter mobile number </h>
+            <br>
+        <!-- <label for="mobile_Number">Enter mobile number  </label> -->
+        <input type="number" id ="number" name="number " placeholder="Mobile number" required>
+        <br><br>
+
+        <h>Enter your email </h>
+        <br>
+        <!-- <label for ="email">Enter your email</label> -->
+        <input for="email" id="email" name ="email" placeholder="Email" required>
+        <br><br>
+
+        <label for="otp_verify">OTP Verification</label>
+        <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
+        <br><br>
+
+        <input type="checkbox" id="agree"> 
+        <label id="label_agree" for="agree">I agree to the terms and conditions.</label> 
+        
+        <a href="index.html" onclick="alert('Account Created Successfully!!')" >
+        <div id="create_acc_small_box"  type="submit"> 
+            <h2  type="submit" style="color: white; ">CREATE ACCOUNT</h2>
+        </div></a>
+
+        <div type="line" style="position:relative; text-align: center; margin: 5px;" >-------Continue With-------</div>
+
+        <div class="continue_box">
+            <button class="google-btn">
+                <img src="https://www.svgrepo.com/show/355037/google.svg" class="icon">
+                <!-- Continue with google -->
+                 Google
+            </button>
+
+            <button class="facebook-btn">
+                <img src ="https://www.svgrepo.com/show/452196/facebook-1.svg" class="icon">
+                <!-- Continue with facebook -->
+                 Facebook
+            </button>
+        </div>
+        
+    </form></form> 
+
+    </div>
+    <!-- for copywrite  -->
+    <p style="bottom: 0%; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
+</html>
