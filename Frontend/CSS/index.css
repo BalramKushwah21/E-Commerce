@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: skyblue;
+  /* background-color: skyblue; */
+  background-image: image("Frontend\\Res\\Balram.jpg");
 }
 
 .header {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
   padding: 0px 20px 0px 20px;
   margin: 5px;
   text-decoration: none;
