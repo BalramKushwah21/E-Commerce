@@ -1,47 +1,93 @@
 body {
-    background-color: lightgrey;
-    display: flex;
-}
-form{
-    align-items: center;
-    justify-content: center;
+            background-color: #5395cf;
 
-}
-.login_box {
-    width: 400px;
-    height: 300px;
-    padding: 20px;
-    border: 2px solid rgb(240, 190, 190);
-    margin: 0 auto;
-    background-color:rgb(117, 114, 110);
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px auto;
-    padding-top: 10px;
-    font-weight: 900;
-    font-size: medium;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-}
-.upperbox {
-    display:flex;
-    width:100%;
-    height:100vh;
-    background-color: rgb(82, 173, 173);
-    padding-top: 200px;
 
-}
-label , input{
-    gap: 20px;
-    margin: 20px;
-    
+        .login_box {
+            background-color: #ffffff;
 
-}
-button{
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
 
-    background-color: rgb(165, 144, 144);
-    font-size:medium ;
-    font-weight: bold;
-    align-items: center  ;
-    /* padding: 70; */
-    justify-content: center;
-}
+        h1 {
+            color: #0a3062;
+            margin-bottom: 20px;
+        }
+
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+
+        #login_button {
+            width: 95%;
+            padding: 10px;
+            background-color: #0a3d62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #login_button:hover {
+            background-color: #07406c;
+        }
+
+
+        .continue_line {
+            margin: 15px 0;
+            color: #555;
+        }
+
+
+        .continue_box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .google-btn,
+        .facebook-btn {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: hwb(0 100% 0%);
+        }
+
+        .google-btn img,
+        .facebook-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+        }
