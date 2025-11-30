@@ -6,3 +6,7 @@
     position: relative;
     display: flex;
 }
+.product_images{
+    background-color: rgb(142, 142, 150);
+    margin: 20px;
+}
