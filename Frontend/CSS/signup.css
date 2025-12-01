@@ -16,9 +16,15 @@ body{
     position: relative;
 }
 
-
+#welcome_text{
+    color: darkblue; font-weight: bold ;
+    text-align: center;
+}
+h1{
+text-align: center;
+}
 /* for item which is inside the box */
-h1,form{
+form{
     text-align: center;
     padding: 10px;
 }
@@ -57,8 +63,14 @@ h2{
 
 
 
-.google-btn ,img.icon ,.facebook-btn, img.icon {
+.google-btn ,img.icon   {
     width:35px; 
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.facebook-btn{
+    width:45px; 
     background-color: white;
     border: none;
     cursor: pointer;
