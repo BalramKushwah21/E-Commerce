@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    width: 50%;
+    width: 350px;
     height: 50%;
     margin: auto;
     border: 2px solid black;
@@ -41,10 +41,11 @@ h1,form{
 }
 
 #create_acc_small_box{
-    width: 35;
+    width: 250px;
     height: 4.35vh;
+    margin: auto;
     background-color: black ;
-    border-radius: 11%;
+    border-radius: 10px;
     font-size: small;
 }
 
@@ -54,23 +55,11 @@ h2{
     cursor: pointer;
 }
 
-.continue_box{
-    text-align: center;
-    margin-top: 5px;   
-}
-.google-btn , .facebook-btn{
-    width: 45%;
-    padding: 10px;
-    border-radius: 5%;
-    font-size: 12px;
-    display: right;
-    align-items: center;
-    border: 1px solid red;
-    background-color: beige;
-    gap: 10px;
-    cursor: pointer;
-}
-.google-btn img.icon , .facebook-btn img.icon {
+
+
+.google-btn ,img.icon ,.facebook-btn, img.icon {
     width:35px; 
-    
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }

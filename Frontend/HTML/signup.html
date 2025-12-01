@@ -31,17 +31,25 @@
         <input for="email" id="email" name ="email" placeholder="Email" required>
         <br><br>
 
-        <label for="otp_verify">OTP Verification</label>
+        <h>Mobile/email Verification</h>
         <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
         <br><br>
 
         <input type="checkbox" id="agree"> 
         <label id="label_agree" for="agree">I agree to the terms and conditions.</label> 
         
-        <a href="index.html" onclick="alert('Account Created Successfully!!')">
+        
+        <!-- <a href="index.html" onclick="alert('Account Created Successfully!!')">
         <div id="create_acc_small_box"  type="submit"> 
             <h2  type="submit" style="color: white ">CREATE ACCOUNT</h2>
-        </div></a>
+        </div></a> -->
+        <br><br>
+        
+        <button class="create_acc_button" type="submit">
+            <a href="index.html" onclick="alert('Account Created Successfully!!')"></a>
+            CREATE ACCOUNT
+        </button>
+        <br><br>
 
         <div type="line" style="position:relative; text-align: center; margin: 5px;" >-------Continue With-------</div>
 
@@ -49,13 +57,11 @@
             <button class="google-btn">
                 <img src="../Res/product_images/icon/google.svg" class="icon">
                 <!-- Continue with google -->
-                 Google
             </button>
 
             <button class="facebook-btn">
                 <img src ="../Res/product_images/icon/facebook-1.svg" class="icon">
                 <!-- Continue with facebook -->
-                 Facebook
             </button>
         </div>
          
