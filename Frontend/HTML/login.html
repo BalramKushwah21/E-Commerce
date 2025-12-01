@@ -1,26 +1,48 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link rel="stylesheet" href="CSS/login.css">
-
- </head>
- <body>
-   <div class="login_box" type="box">
-    <h1>Login Page</h1>
+    <title>E-commerce Login Page</title>
     
-    <form action="../HTML/submit_succes.html" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    </div>
+        
+        <link rel="stylesheet" href="../CSS/login.css">
 
- </body>
- </html>
+</head>
+
+<body>
+
+    <div class="login_box">
+        <h1>Login Page</h1>
+
+        <form action="../JavaScript/login.js" method="post">
+            <label for="email">Enter your email or username</label><br>
+            <input type="text" id="email" name="email" placeholder="Email / Username" required>
+            <br>
+
+            <label for="password">Enter your password</label><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <br>
+
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to the terms and conditions.</label>
+            <br><br>
+
+            <button type="submit" id="login_button">LOGIN</button>
+
+            <div class="continue_line">-------Continue With-------</div>
+
+            <div class="continue_box">
+                <button type="button" class="google-btn">
+                    <img src="https://www.svgrepo.com/show/355037/google.svg" class="icon">
+                    Google
+                </button>
+
+                <button type="button" class="facebook-btn">
+                    <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" class="icon">
+                    Facebook
+                </button>
+            </div>
+        </form>
+    </div>
