@@ -8,67 +8,50 @@
     <link rel="stylesheet" href = "../CSS/signup.css">
 </head>
 <body>
-    <div class="signup_box" type="box">
-
-        <h1 id="welcome_text">WELCOME</h>
-
-        <h1>Create Account</h1>
-
-        <form action="../JavaScript/signup.js" method="post">
-       
-        <!-- <label for="name ">Enter your name</label> -->
+        <form class="signup_box" action="../HTML/index.html">
+       <h1>CREATE NEW ACCOUNT</h1>
+        
         <input type="text" id ="name" name = "name" placeholder="Your name" required>
         <br><br>
 
-      
-            
-        <!-- <label for="mobile_Number">Enter mobile number  </label> -->
         <input type="number" id ="number" name="number " placeholder="Mobile number" required>
         <br><br>
 
-        
-        <!-- <label for ="email">Enter your email</label> -->
         <input for="email" id="email" name ="email" placeholder="Email" required>
         <br><br>
 
-        <h>Mobile/email Verification</h>
+        <h class="otp_line">Mobile/email Verification</h>
         <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
         <br><br>
 
-        <input type="checkbox" id="agree"> 
+        <input type="checkbox" id="agree" required> 
         <label id="label_agree" for="agree">I agree to the terms and conditions.</label> 
         
-        
-        <!-- <a href="index.html" onclick="alert('Account Created Successfully!!')">
-        <div id="create_acc_small_box"  type="submit"> 
-            <h2  type="submit" style="color: white ">CREATE ACCOUNT</h2>
-        </div></a> -->
         <br><br>
         
-        
-        <button href="../HTML/index.html" onclick="alert('Account Created Successfully!!')" type="submit"> CREATE ACCOUNT</button>
+        <button href="../HTML/index.html" type="submit"> 
+            CREATE ACCOUNT</button>
     
         <br><br>
-</form>
-        <div type="line" style="position:relative; text-align: center; margin: 5px;" >-------Continue With-------</div>
+
+        <div class="line" type="line"  >-------Continue With-------</div>
 
         <div class="continue_box">
-            <button class="google-btn">
-                <img src="../Res/product_images/icon/google.svg" class="icon">
-                <!-- Continue with google -->
-            </button>
+                <button type="button" class="google-btn">
+                    <img src="https://www.svgrepo.com/show/355037/google.svg" class="icon">
+                    <!-- Google -->
+                </button>
 
-            <button class="facebook-btn">
-                <img src ="../Res/product_images/icon/facebook-1.svg" class="icon">
-                <!-- Continue with facebook -->
-            </button>
-        </div>
-         
-    <!-- </form> -->
+                <button type="button" class="facebook-btn">
+                    <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" class="icon">
+                    <!-- Facebook -->
+                </button>
+        </div> 
+    </form>
 
     </div>
     <!-- for copywrite  -->
-    <p style="bottom: 0%; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
+    <p style="bottom: 0px; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
 
 </body>
 </html>
