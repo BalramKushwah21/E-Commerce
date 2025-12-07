@@ -1,6 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #bcdfff, #eaf3ff);
 }
@@ -14,6 +17,7 @@ body {
 }
 
 .container {
+    margin: 20px;
     width: 80%;
     margin: 30px auto;
     display: flex;
@@ -47,6 +51,7 @@ body {
 
 
 .contact-form h3 {
+    margin: 20px;
     font-size: 22px;
     margin-bottom: 20px;
     color: #003366;
@@ -86,8 +91,11 @@ form button:hover {
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
         width: 90%;
-    }
+           }
 
     .contact-info, .contact-form {
         width: 100%;
