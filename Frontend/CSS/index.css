@@ -65,27 +65,28 @@ body {
 .header-right a {
     width: 150px;
     padding: 12px;
-     background-color: white;
-     border-radius: 10px;
-     text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
     font-size: 16px;
     font-weight:bold;
     color:black;
     transition: 0.5ease;
-      border-radius:10px;
+    border-radius:10px;
     box-shadow:0 0 10px rgb(48, 35, 35);
-  
+
 }
 .header-right a:hover{
     background-color:rgb(0, 31, 188);
     color: white;
     cursor:pointer;
-}   
+}
 .header-right{
     gap: 0;
 }
 /* dashboard*/
 .dashboard{
+    width: 100vw;
     padding: 20px;
 }
 /*search bar*/
@@ -143,7 +144,7 @@ body {
     box-shadow:0 0 10px rgb(128, 92, 92);
     text-align:center;
     font-weight:bold;
-     border: 2px solid rgb(6, 3, 3);
+    border: 2px solid rgb(6, 3, 3);
 
 }
 .cards{
@@ -175,7 +176,7 @@ body {
     box-shadow:0 0 10px rgb(48, 35, 35);
     text-align:left;
     font-weight:bold;
-     border: 2px solid rgb(6, 3, 3);
+    border: 2px solid rgb(6, 3, 3);
 
 }
 .pending{
@@ -186,7 +187,7 @@ body {
     box-shadow:0 0 10px rgb(128, 92, 92);
     text-align:left;
     font-weight:bold;
-     border: 2px solid rgb(6, 3, 3);
+    border: 2px solid rgb(6, 3, 3);
 
 }
 
@@ -221,4 +222,38 @@ body {
 .order-table th{
     background-color: antiquewhite;
     font-size:18px;
+}
+
+
+@media (max-width: 768px) {
+    .header-right {
+        width: 100px;
+        padding: 10px;
+    }
+    .header-right a {
+        width: 100px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .search-bar input {
+        width: 70%;
+    }
+    .card-container {
+        flex-direction:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .order-table {
+        width: 100%;
+    }
+    .header-right{
+        visibility: hidden;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .order-table{
+    width:100%;
+    }
 }
