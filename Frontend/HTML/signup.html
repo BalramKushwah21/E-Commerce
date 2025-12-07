@@ -21,8 +21,7 @@
                 <!-- <label for="name ">Enter your name</label> -->
                 <input type="text" id="name" name="name" placeholder="Your name" required>
                 <br><br>
-
-
+                
 
                 <!-- <label for="mobile_Number">Enter mobile number  </label> -->
                 <input type="number" id="number" name="number " placeholder="Mobile number" required>
@@ -47,13 +46,14 @@
                 <button class="create_acc_button" type="submit" onclick="submit_form()">
                     CREATE ACCOUNT
                 </button>
+            </form>
                 <br><br>
 
                 <div type="line" style="position:relative; text-align: center; margin: 5px;">-------Continue With-------
                 </div>
 
                 <div class="continue_box">
-                    <button class="google-btn">
+                    <button class="google-btn" onclick="submit_form()">
                         <img src="../Res/product_images/icon/google.svg" class="icon">
                         <!-- Continue with google -->
                     </button>
@@ -64,13 +64,21 @@
                     </button>
                 </div>
 
-            </form>
-<p class="result"></p>
+<p id="result"></p>
     </div>
     <!-- for copywrite  -->
     <p>&copy 2025 My Website. All rights reserved.</p>
 
-<script src="../JavaScript/signup.js"></script>
+<!-- <script src="../JavaScript/signup.js"></script> -->
+ <script>
+    function submit_form(){
+        // let name = document.getElementByID("name").value;
+        let res = document.getElementById("result");
+        res.innerText = "Balram"
+
+        
+    }
+ </script>
 
 </body>
 
