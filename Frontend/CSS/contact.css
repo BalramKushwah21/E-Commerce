@@ -81,3 +81,16 @@ form button {
 form button:hover {
     background: #0b59c7;
 }
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
