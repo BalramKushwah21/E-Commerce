@@ -1,156 +1,65 @@
+:root{
+    --primary-color: #4CAF50;
+    --secondary-color: #f44336;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
 
-#bg{
-    background-color: rgb(128, 187, 211);
-    width: 190vh;
-    height: 90vh;
+
+.search-box{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 40%;
+
 }
-body{
+a:hover{
+    background-color: black;
+    color: white;
+   border:1px solid var(--primary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.header{
     
-    background-color:rgb(112, 157, 201);
-    width: 190vh;
-    height: 90vh;
-}
-.cards{
-    background-color: rgb(173, 119, 95);
-    width:200px;
-    height:120px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgb(225, 214, 214);
+    height: 70px;
+    background-color: var(--background-color);
     display:flex;
     align-items: center;
-    justify-self: center;
-    font-weight: 40px;
-}
-
-body {
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 20px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
     
-  margin: 0;
-  padding: 0;
-  background-color: rgb(157, 205, 247);
 }
-/*sidebar styles*/
-.header-right {
-    width: 180px;
-    height: 100vh;
-    background-color: rgb(235, 231, 199);
-    position: fixed;
-    top: 0;
-    right: 0;;
-  padding: 0px 20px 0px 20px;
-  margin: 5px;
-  text-decoration: darkblue;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-   border-radius:5px;
-  box-shadow: 0 0 10px rgb(24, 60, 122);
-  justify-content: flex-start;
-  align-items: center;
+h3{
+    color: var(--text-color);
 }
- .header-right a.logo {
-    background-color: white;
-    font-size: 20px;
-  margin-right: auto;
-    border-radius:5px;
-    box-shadow:0 0 10px rgb(48, 35, 35);
-}
-.header-right a.logo:hover{
-    background-color: white;
-    color: black;
-    cursor: default;
-      border-radius:10px;
-    box-shadow:0 0 10px rgb(48, 35, 35);
-}
-
-.header-right a {
-    width: 150px;
-    padding: 12px;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-weight:bold;
-    color:black;
-    transition: 0.5ease;
-    border-radius:10px;
-    box-shadow:0 0 10px rgb(48, 35, 35);
+.header :first-child{
+    margin-right: auto;
+    font-size: xx-large;
 
 }
-.header-right a:hover{
-    background-color:rgb(0, 31, 188);
-    color: white;
-    cursor:pointer;
-}
-.header-right{
-    gap: 0;
-}
-/* dashboard*/
-.dashboard{
-    width: 100vw;
-    padding: 20px;
-}
-/*search bar*/
-.search-bar{
-    width: 100%;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:20px;
-    margin-top: 20px;
-    justify-content: flex-start;
-}
-.search-bar input{
-    width: 50%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid gray;
-    font-size: 16px;
-    outline: none;
-    transition:0.5 ease;
-    border-radius:10px;
-    box-shadow:0 0 10px rgb(48, 35, 35);
-}
-.search-bar input:focus{
-    border-color:rgb(59,120,207);
-    box-shadow:0 0 5px rgba(59,120,207,0.5)
-}
-.search-bar button{
-    padding: 10px 25px;
-    background-color: darkkhaki;
-    border:none;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.5 ease;
-
-}
-.search-bar button:hover{
-    background-color:rgb(36,90,170)
-}
-/* creating cards section*/
 .card-container{
+    margin:20px auto;
+    padding: 20px;
+  
     display: flex;
-    gap:40px;
-    margin-bottom:30;
-    align-items: flex-start;
-}
-.box{
-    background-color:rgb(197, 223, 197);
-    width: 10px;
-    padding:500px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgb(128, 92, 92);
-    text-align:center;
-    font-weight:bold;
-    border: 2px solid rgb(6, 3, 3);
-
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .cards{
     background-color:rgb(213, 224, 167);
-    width: 100px;
-    padding:50px;
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
     border-radius:10px;
     box-shadow:0 0 10px rgb(48, 35, 35);
     text-align:left;
@@ -159,8 +68,9 @@ body {
 }
 .item{
     background-color:rgb(241, 195, 198);
-    width: 100px;
-    padding:50px;
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
     border-radius:10px;
     box-shadow:0 0 10px rgb(48, 35, 35);
     text-align:left;
@@ -170,8 +80,9 @@ body {
 }
 .total{
     background-color:rgb(196, 172, 174);
-    width: 100px;
-    padding:50px;
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
     border-radius:10px;
     box-shadow:0 0 10px rgb(48, 35, 35);
     text-align:left;
@@ -181,8 +92,9 @@ body {
 }
 .pending{
     background-color:rgb(197, 223, 197);
-    width: 100px;
-    padding:50px;
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
     border-radius:10px;
     box-shadow:0 0 10px rgb(128, 92, 92);
     text-align:left;
@@ -209,10 +121,13 @@ body {
 
 /*table*/
 .order-table{
-    width:50%;
+    width:100%;
+    max-width:100%;
     background-color: white;
     border-collapse: collapse;
-    box-shadow: 0 0 10px gray;;
+    box-shadow: 0 0 10px gray;
+    /* allow table to scroll horizontally on very small screens */
+    display: table;
 }
 .order-table th,.order-table td{
     border:1px solid gray;
@@ -224,36 +139,58 @@ body {
     font-size:18px;
 }
 
+/* Mobile toggle button */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; /* hide by default */
+}
 
-@media (max-width: 768px) {
-    .header-right {
-        width: 100px;
-        padding: 10px;
+/* Mobile Menu */
+.mobile-menu {
+transition: all 1s ease;
+top: 20px;
+  position: absolute;
+  right: 0;
+  width: 150px;
+  background: #222;
+ 
+  padding: 15px 0;
+  display: none;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu  a:hover {
+  background: #333;
+}
+
+@media (max-width: 500px) {
+    .menu-btn {
+        display: block; /* show toggle button on small screens */
     }
-    .header-right a {
-        width: 100px;
-        padding: 8px;
-        font-size: 14px;
-    }
-    .search-bar input {
-        width: 70%;
+    .header{
+        display: none;
     }
     .card-container {
-        flex-direction:flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    .cards{
+        width: 80%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
     .order-table {
+        display: block;
+        overflow-x: auto;
         width: 100%;
     }
-    .header-right{
-        /* visibility: hidden; */
-    }
-    .card-container{
-        display: flex;
-        flex-direction: row;
-    }
-    .order-table{
-    width:100%;
-    }
+    
 }

@@ -9,26 +9,36 @@
 
 </head>
 <body>
-    <!--Sidebar-->
-    <div class="header-right" type="header">
+    <!--Desktop Navbar-->
+    <div class="header" type="header">
         
-        <a href="#" class ="logo"><h2>My Shop</h2></a>
-        <a href="#"><h3>Home</h3></a>
-        <a href="contact.html"><h3>ContactUs</h3></a>
-         <a href="orders.html"><h3>orders</h3></a>
-        <a href="product.html"><h3>Product</h3></a>
-        <a href="services.html"><h3>Services</h3></a>
-        <a href="login.html"><h3>Login</h3></a>
-        <a href="signup.html"><h3>SignUp</h3></a>
+        <a href="#" class ="logo">My Shop</a>
+        <input class="search-box" type="text" placeholder="search orders,products,customers...">
+        <a href="#">Home</a>
+        <a href="contact.html">ContactUs</a>
+         <a href="orders.html">Orders</a>
+        <a href="product.html">Product</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">SignUp</a>
         
     </div>
-    <!-- Dashboard Section-->
-     <div class="Dashboard">
-      <div class="search-bar">
-         <input type="text" placeholder="search orders,products,customers...">
-         <button>search</button>
-
-      </div>
+    <!-- Mobile nav bar -->
+      <div class="menu-btn" id="menuBtn">☰</div>
+    <div class="mobile-menu" id="mobileMenu">
+        
+        <a href="#" class ="logo">My Shop</a>
+   
+        <a href="#">Home</a>
+        <a href="contact.html">ContactUs</a>
+         <a href="orders.html">Orders</a>
+        <a href="product.html">Product</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">SignUp</a>
+        
+    </div>
+  
       
         <!-- Card section-->
          <div class="card-container">
@@ -36,15 +46,15 @@
             <h3>Total orders</h3>
             <p>1450</p>
          </div>
-         <div class="item">
+         <div class="cards">
             <h3>Total Revenue</h3>
             <p> Rs 4,56,000</p>
          </div>
-         <div class="total">
+         <div class="cards">
             <h3>Total cutomers</h3>
             <p>980</p>
          </div>
-         <div class="pending">
+         <div class="cards">
             <h3>pending Orders</h3>
             <p>30</p>
          </div>
@@ -107,6 +117,7 @@
      
  <!-- <script>alert("Hello Dominators")</script> -->
     <script src="JavaScript/script.js"></script>
+    <script src="../JavaScript/nav_button.js"></script>
 
     <!-- For copyright symbol -->
      
