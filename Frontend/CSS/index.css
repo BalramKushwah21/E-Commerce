@@ -247,7 +247,7 @@ body {
         width: 100%;
     }
     .header-right{
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     .card-container{
         display: flex;

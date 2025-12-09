@@ -1,60 +1,46 @@
-<!-- Ramdas -->
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="../CSS/signup.css">
+<title>SignUp</title>
+<form id="signup_box">
+    <h1>CREATE NEW ACCOUNT</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <title>E-commerce SignUp page</title>
-    <link rel="stylesheet" href="../CSS/signup.css">
-</head>
+    <input type="text" id="name" placeholder="Your name" required>
+    <br><br>
 
-<body>
-        <form class="signup_box" action="../HTML/index.html">
-       <h1>CREATE NEW ACCOUNT</h1>
-        
-        <input type="text" id ="name" name = "name" placeholder="Your name" required>
-        <br><br>
+    <input for="email" id="email" placeholder="Email" required>
+    <br><br>
 
-        <input type="number" id ="number" name="number " placeholder="Mobile number" required>
-        <br><br>
+    <input type="password" id="password" placeholder="Password" required>
+    <br><br>
 
-        <input for="email" id="email" name ="email" placeholder="Email" required>
-        <br><br>
+    <h class="otp_line">Mobile/email Verification</h>
+    <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
+    <br><br>
 
-        <h class="otp_line">Mobile/email Verification</h>
-        <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
-        <br><br>
+    <input type="checkbox" id="agree" required>
+    <label id="label_agree" for="agree">I agree to the terms and conditions.</label>
 
-        <input type="checkbox" id="agree" required> 
-        <label id="label_agree" for="agree">I agree to the terms and conditions.</label> 
-        
-        <br><br>
-        
-        <button href="../HTML/index.html" type="submit"> 
-            CREATE ACCOUNT</button>
-    
-        <br><br>
+    <br><br>
 
-        <div class="line" type="line"  >-------Continue With-------</div>
+    <button type="submit"> CREATE ACCOUNT</button>
 
-                <div class="continue_box">
-                    <button class="google-btn" onclick="submit_form()">
-                        <img src="../Res/product_images/icon/google.svg" class="icon">
-                        <!-- Continue with google -->
-                    </button>
+    <br><br>
 
-                    <button class="facebook-btn">
-                <img src =" ../Res/product_images/icon/facebook-1.svg" class="icon">
-                        <!-- Continue with facebook -->
-                    </button>
-                </div>
+    <div class="line" type="line">-------Continue With-------</div>
 
-            </form>
+    <div class="continue_box">
+        <button class="google-btn" onclick="submit_form()">
+            <img src="../Res/product_images/icon/google.svg" class="icon">
+            <!-- Continue with google -->
+        </button>
+
+        <button class="facebook-btn">
+            <img src=" ../Res/product_images/icon/facebook-1.svg" class="icon">
+            <!-- Continue with facebook -->
+        </button>
     </div>
-    <!-- for copywrite  -->
-    <p style="bottom: 0px; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
 
-</body>
+</form>
 
-</html>
+<!-- for copywrite  -->
+<p style="bottom: 0px; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
+<script src="../JavaScript/auth.js"></script>
