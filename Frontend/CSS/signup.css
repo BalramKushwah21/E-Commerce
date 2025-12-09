@@ -1,5 +1,5 @@
 body{
-    background-image: url(../Res/product_images/icon/sign_bg.jpg);
+    background-image: url(../Res/Nature2.jpg);
     /* margin: auto; */
     padding: 50px;
     height: 100vh;
@@ -16,7 +16,7 @@ h1{
 }
 
 /* for box */
-.signup_box{
+#signup_box{
     background: rgba(255, 255, 255, 0.1);
     /* padding: 40px; */
     margin: auto;
@@ -33,7 +33,7 @@ input::placeholder{
     opacity: 1;
 }
 
-#name ,#number ,#email {
+#name ,#password ,#email {
     width: 80%;
     padding: 12px;
     margin: 10px 0;
