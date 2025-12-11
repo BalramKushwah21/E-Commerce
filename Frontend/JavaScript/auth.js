@@ -55,6 +55,5 @@ if (signinForm) {
       else{
         alert(result.message);
       }
-    
   });
 }
