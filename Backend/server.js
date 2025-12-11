@@ -11,6 +11,6 @@ app.use(express.json());
 
 app.use("/", authRoutes);
 
-app.listen(3050,'10.118.95.234', () =>{
+app.listen(3050, () =>{
     console.log("Server running on port 3050");
 });
