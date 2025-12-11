@@ -11,7 +11,7 @@ if (signupForm) {
       password: document.getElementById("password").value
     };
 
-    const res = await fetch("http://10.17.78.234:3050/signup", {
+    const res = await fetch("https://balramkushwah21.github.io/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -42,7 +42,7 @@ if (signinForm) {
       password: document.getElementById("login-password").value
     };
 
-    const res = await fetch("http://10.17.78.234:3050/signin", {
+    const res = await fetch("https://balramkushwah21.github.io/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
