@@ -50,7 +50,7 @@ if (signinForm) {
     const result = await res.json();
       if(result.message === "Login successful") {
         // localStorage.setItem("token", result.token);
-        window.location.href = "index.html"; // Redirect to home page
+        window.location.href = "seller.html"; // Redirect to home page
       }
       else{
         alert(result.message);
