@@ -1,0 +1,196 @@
+:root{
+    --primary-color: #4CAF50;
+    --secondary-color: #f44336;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
+
+
+.search-box{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 40%;
+
+}
+a:hover{
+    background-color: black;
+    color: white;
+   border:1px solid var(--primary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.header{
+    
+    height: 70px;
+    background-color: var(--background-color);
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 20px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    
+}
+h3{
+    color: var(--text-color);
+}
+.header :first-child{
+    margin-right: auto;
+    font-size: xx-large;
+
+}
+.card-container{
+    margin:20px auto;
+    padding: 20px;
+  
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards{
+    background-color:rgb(213, 224, 167);
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+}
+.item{
+    background-color:rgb(241, 195, 198);
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+
+}
+.total{
+    background-color:rgb(196, 172, 174);
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(48, 35, 35);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+
+}
+.pending{
+    background-color:rgb(197, 223, 197);
+    flex: 1 1 180px;
+    min-width: 140px;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(128, 92, 92);
+    text-align:left;
+    font-weight:bold;
+    border: 2px solid rgb(6, 3, 3);
+
+}
+
+.cards:hover {
+    background-color: rgb(131, 181, 98);
+}
+
+.item:hover {
+    background-color: rgb(167, 93, 93);
+}
+
+.total:hover {
+    background-color: rgb(102, 169, 111);
+}
+
+.pending:hover {
+    background-color: rgb(191, 215, 97);
+}
+
+/*table*/
+.order-table{
+    width:100%;
+    max-width:100%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px gray;
+    /* allow table to scroll horizontally on very small screens */
+    display: table;
+}
+.order-table th,.order-table td{
+    border:1px solid gray;
+    padding:10px;
+    text-align:center;
+}
+.order-table th{
+    background-color: antiquewhite;
+    font-size:18px;
+}
+
+/* Mobile toggle button */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; /* hide by default */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+transition: all 1s ease;
+top: 20px;
+  position: absolute;
+  right: 0;
+  width: 150px;
+  background: #222;
+ 
+  padding: 15px 0;
+  display: none;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu  a:hover {
+  background: #333;
+}
+
+@media (max-width: 500px) {
+    .menu-btn {
+        display: block; /* show toggle button on small screens */
+    }
+    .header{
+        display: none;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        width: 80%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .order-table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+    
+}

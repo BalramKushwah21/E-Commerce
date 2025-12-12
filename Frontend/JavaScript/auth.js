@@ -11,7 +11,7 @@ if (signupForm) {
       password: document.getElementById("password").value
     };
 
-    const res = await fetch("http://10.118.95.234:3050/signup", {
+    const res = await fetch("https://e-commerce-9fcs.onrender.com/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -42,7 +42,7 @@ if (signinForm) {
       password: document.getElementById("login-password").value
     };
 
-    const res = await fetch("http://10.118.95.234:3050/signin", {
+    const res = await fetch("https://e-commerce-9fcs.onrender.com/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -50,11 +50,10 @@ if (signinForm) {
     const result = await res.json();
       if(result.message === "Login successful") {
         // localStorage.setItem("token", result.token);
-        window.location.href = "index.html"; // Redirect to home page
+        window.location.href = "seller.html"; // Redirect to home page
       }
       else{
         alert(result.message);
       }
-    
   });
 }

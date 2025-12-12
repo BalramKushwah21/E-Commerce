@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>My Shop — E‑Commerce Demo</title>
+	<link rel="stylesheet" href="Frontend/CSS/index.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="logo" href="#">My Shop</a>
+		<nav class="nav">
+			<input class="search" placeholder="Search products..." aria-label="Search">
+			<a class="login-btn" href="Frontend/HTML/login.html">Login</a>
+			<a class="signup-btn" href="Frontend/HTML/signup.html">Sign Up</a>
+			<button class="cart-btn" aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<h1>Featured Products</h1>
+			<p>Simple responsive e‑commerce demo — tap a product to add to cart.</p>
+		</section>
+
+		<section class="products" id="product-list">
+			<!-- Products injected by JS -->
+		</section>
+	</main>
+
+	<aside class="cart-drawer" id="cart">
+		<header>
+			<h2>Your Cart</h2>
+			<button id="close-cart">Close</button>
+		</header>
+		<ul class="cart-items"></ul>
+		<div class="cart-footer">
+			<div class="total">Total: $<span id="cart-total">0.00</span></div>
+			<button id="checkout">Checkout</button>
+		</div>
+	</aside>
+
+	<script src="Frontend/JavaScript/index.js"></script>
+</body>
+</html>
+
