@@ -7,7 +7,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: "https://balramkushwah21.github.io/E-Commerce/", // your actual GitHub Pages URL
+  origin: ["https://balramkushwah21.github.io/E-Commerce/", "http://localhost:27017"],// your actual GitHub Pages URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
