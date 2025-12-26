@@ -10,6 +10,12 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "msedge",
+            "name": "http://192.168.43.159:3000/Frontend/HTML/signup.html",
+            "request": "launch",
+            "url": "http://192.168.43.159:3000/Frontend/HTML/signup.html"
         }
     ]
 }
