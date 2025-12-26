@@ -45,8 +45,7 @@ if (loginForm) {
     const res = await fetch("https://e-commerce-pgvp.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({email: "test@test.com",
-    password: "123456"})
+      body: JSON.stringify(data)
     });
     const result = await res.json();
       if(result.message === "Login successful") {
