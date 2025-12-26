@@ -26,4 +26,8 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err));
 
 const PORT = process.env.PORT || 3000;
+app.post("/__proof__", (req, res) => {
+  res.json({ message: "PROOF ROUTE WORKS" });
+});
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
