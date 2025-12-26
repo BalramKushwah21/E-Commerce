@@ -54,7 +54,7 @@ if (loginForm) {
         window.location.href = "seller.html"; // Redirect to home page
       }
       else{
-        alert("Custom");
+        alert(result.message);
         window.location.href = "signup.html"; // Redirect to signup page
       }
   });
