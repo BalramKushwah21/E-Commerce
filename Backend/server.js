@@ -7,10 +7,20 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
+
+
+// temprary
+app.post("/__debug__", (req, res) => {
+  res.json({ message: "DEBUG ROUTE HIT" });
+});
+
+
 app.use(cors({
   origin: "*"
 }));
 app.use(express.json());
+
+
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
