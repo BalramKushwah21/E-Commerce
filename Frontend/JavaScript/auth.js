@@ -18,6 +18,7 @@ if (signupForm) {
     });
     const result = await res.json();
     if(result.message === "Signup successful") {
+      alert("Signup successful! Please login.");
       window.location.href = "login.html"; // Redirect to login page
     }
     else if(result.message === "User already exists"){
