@@ -27,7 +27,6 @@ if (signupForm) {
     }
     else{
       alert(result.message);
-      window.location.href = "signup.html"; // Redirect to signup page
     }
     // alert((await res.json()).message);
   });
@@ -56,6 +55,7 @@ if (loginForm) {
       }
       else{
         alert(result.message);
+        window.location.href = "signup.html"; // Redirect to signup page
       }
   });
 }
