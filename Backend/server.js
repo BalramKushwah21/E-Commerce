@@ -10,9 +10,8 @@ const app = express();
 
 
 // temprary
-app.post("/__debug__", (req, res) => {
-  res.json({ message: "DEBUG ROUTE HIT" });
-});
+app.use("/", authRoutes);
+
 
 
 app.use(cors({
