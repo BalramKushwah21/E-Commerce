@@ -1,10 +1,10 @@
 const PRODUCTS = [
-  {id:1,title:'Classic Sneakers',price:59.99,img:'Frontend/Res/product_images/icon/sample1.jpg'},
-  {id:2,title:'Casual Tee',price:19.99,img:'Frontend/Res/product_images/icon/sample2.jpg'},
-  {id:3,title:'Denim Jacket',price:89.99,img:'Frontend/Res/product_images/icon/sample3.jpg'},
-  {id:4,title:'Leather Bag',price:129.99,img:'Frontend/Res/product_images/icon/sample4.jpg'},
-  {id:5,title:'Sunglasses',price:29.99,img:'Frontend/Res/product_images/icon/sample5.jpg'},
-  {id:6,title:'Sport Watch',price:149.99,img:'Frontend/Res/product_images/icon/sample6.jpg'}
+  {id:1,title:'Classic Sneakers',price:59.99,img:'Frontend/Res/product_image/cloth1.webp'},
+  {id:2,title:'Casual Tee',price:19.99,img:'Frontend/Res/ram.jpeg'},
+  {id:3,title:'Denim Jacket',price:89.99,img:'Frontend/Res/product_images/shoes.webp'},
+  {id:4,title:'Leather Bag',price:129.99,img:'Frontend/Res/product_images/sports1.webp'},
+  {id:5,title:'Sunglasses',price:299.99,img:'Frontend/Res/product_images/iphone.jpg'},
+  {id:6,title:'Sport Watch',price:149.99,img:'Frontend/Res/product_images/cloth1.webp'}
 ];
 
 const productList = document.getElementById('product-list');
