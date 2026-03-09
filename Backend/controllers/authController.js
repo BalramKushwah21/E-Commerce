@@ -13,7 +13,7 @@ exports.signup = async (req, res) => {
   res.json({ message: "Signup successful" });
 };
 
-exports.signin = async (req, res) => {
+exports.login = async (req, res) => {
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
