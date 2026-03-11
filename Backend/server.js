@@ -11,25 +11,13 @@ const app = express();
 
 
 
-<<<<<<< HEAD
 app.use(cors({
     origin: "*"
 }));
-=======
-app.use(cors());
-
->>>>>>> 8849cf89f01c165a2d3d2a9d779be44c8f5f407e
 app.use(express.json());
 
 app.use("/", authRoutes);
 
-<<<<<<< HEAD
-=======
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Server running:", PORT));
-
-
->>>>>>> 8849cf89f01c165a2d3d2a9d779be44c8f5f407e
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
