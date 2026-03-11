@@ -11,7 +11,7 @@ if (signupForm) {
       password: document.getElementById("password").value
     };
 
-    const res = await fetch("https://e-commerce-pgvp.onrender.com/login", {
+    const res = await fetch("https://e-commerce-9fcs.onrender.com/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -43,7 +43,7 @@ if (loginForm) {
       password: document.getElementById("login-password").value
     };
 
-    const res = await fetch("https://e-commerce-pgvp.onrender.com/login", {
+    const res = await fetch("https://e-commerce-9fcs.onrender.com/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
