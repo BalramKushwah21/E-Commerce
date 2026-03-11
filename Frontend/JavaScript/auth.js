@@ -11,7 +11,7 @@ if (signupForm) {
       password: document.getElementById("password").value
     };
 
-    const res = await fetch("https://e-commerce-pgvp.onrender.com/login", {
+    const res = await fetch("https://e-commerce-pgvp.onrender.com/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -28,14 +28,9 @@ if (signupForm) {
     else{
       alert(result.message);
     }
-    // alert((await res.json()).message);
   });
 }
 
-// LOGIN
-const loginForm = document.getElementById("login_box");
-if (loginForm) {
-  loginForm.addEventListener("submit", async (e) => {
 // LOGIN
 const loginForm = document.getElementById("login_box");
 if (loginForm) {
@@ -53,13 +48,13 @@ if (loginForm) {
       body: JSON.stringify(data)
     });
     const result = await res.json();
-      if(result.message === "Login successful") {
-        // localStorage.setItem("token", result.token);
-        window.location.href = "seller.html"; // Redirect to home page
-      }
-      else{
-        alert(result.message);
-        window.location.href = "signup.html"; // Redirect to signup page
-      }
+    if(result.message === "Login successful") {
+      // localStorage.setItem("token", result.token);
+      window.location.href = "seller.html"; // Redirect to home page
+    } else {
+      alert(result.message);
+      window.location.href = "signup.html"; // Redirect to signup page
+    }
   });
 }
+ 
