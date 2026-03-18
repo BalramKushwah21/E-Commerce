@@ -1,25 +1,28 @@
 <link rel="stylesheet" href="../CSS/signup.css">
 <link rel="stylesheet" href="../CSS/responsive.css">
+
+
+
 <title>SignUp</title>
 <form id="signup_box">
     <h1>CREATE NEW ACCOUNT</h1>
 
-    <div class="selector_box">
+    <!-- <div class="selector_box">
         <button class="left_button" type="submit" >Seller</button>
-    <!-- </div>
-    <div class="selector_box"> -->
+     </div>
+    <div class="selector_box"> 
         <button class="right_button" type="button"> Buyer</button>
-    </div>
+    </div> -->
 
 
-    <input type="text" id="name" placeholder="Your name" required>
-    <br><br>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <br>
 
-    <input for="email" id="email" placeholder="Email" required>
-    <br><br>
+    <input type="email" id="email"  name="email" placeholder="Email" required>
+    <br>
 
-    <input type="password" id="password" placeholder="Password" >
-    <br><br>
+    <input type="password" id="password" name="password" placeholder="Password" >
+    <br>
 
     <!-- <h class="otp_line">Mobile/email Verification</h>
     <input for="OTP" id="otp_verify" name="otp_verify" placeholder="Enter OTP ">
@@ -30,26 +33,31 @@
 
     <br><br>
 
-    <button class="create_acc_button" type="submit"> CREATE ACCOUNT</button>
+    <button type="submit" id="signup_button">SIGN UP </button>
+    <!-- <br> -->
 
-    <br><br>
-
-    <div class="line" type="line">-------Continue With-------</div>
+    <div class="continue_line">SIGN UP WITH</div>
 
     <div class="continue_box">
-        <button class="google-btn" onclick="submit_form()">
+        <button type="button" class="google-btn" onclick="submit_form()">
             <img src="../Res/product_images/icon/google.svg" class="icon">
-            <!-- Continue with google -->
+            Google
         </button>
 
-        <button class="facebook-btn">
+        <button type="button" class="facebook-btn">
             <img src=" ../Res/product_images/icon/facebook-1.svg" class="icon">
-            <!-- Continue with facebook -->
+            Facebook
         </button>
+        <!-- <br> -->
+         
     </div>
+    <div>
+        <h3 class="Already"> Already have account! <a href="login.html">Login</a> </h3>
+    </div>
+   
 
 </form>
 
 <!-- for copywrite  -->
-<p style="bottom: 0px; text-align: center;">&copy 2025 My Website. All rights reserved.</p>
+<!-- <p style="bottom: 0px; text-align: center;">&copy 2025 My Website. All rights reserved.</p> -->
 <script src="../JavaScript/auth.js"></script>
