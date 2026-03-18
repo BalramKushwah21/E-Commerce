@@ -51,9 +51,11 @@ if (loginForm) {
     if(result.message === "Login successful") {
       // localStorage.setItem("token", result.token);
       window.location.href = "seller.html"; // Redirect to home page
+    } else if (result.message === "Wrong password") {
+      alert("Wrong password. Please try again.");
+      // window.location.href = "login.html"; // Redirect to login page
     } else {
       alert(result.message);
-      window.location.href = "signup.html"; // Redirect to signup page
     }
   });
 }
