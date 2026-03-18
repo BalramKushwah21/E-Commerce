@@ -11,7 +11,7 @@ if (signupForm) {
       password: document.getElementById("password").value
     };
 
-    const res = await fetch("http://10.77.221.234:3000//signup", {
+    const res = await fetch("https://e-commerce-pgvp.onrender.com/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -42,7 +42,7 @@ if (loginForm) {
       password: document.getElementById("login-password").value
     };
 
-    const res = await fetch("http://10.77.221.234:3000//login", {
+    const res = await fetch("https://e-commerce-pgvp.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -51,9 +51,11 @@ if (loginForm) {
     if(result.message === "Login successful") {
       // localStorage.setItem("token", result.token);
       window.location.href = "seller.html"; // Redirect to home page
+    } else if (result.message === "Wrong password") {
+      alert("Wrong password. Please try again.");
+      // window.location.href = "login.html"; // Redirect to login page
     } else {
       alert(result.message);
-      window.location.href = "signup.html"; // Redirect to signup page
     }
   });
 }
