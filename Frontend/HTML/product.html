@@ -10,20 +10,61 @@
 <body>
     <h1 style="font-weight:bolder;font-size: xx-large; color: rgb(55, 7, 99);">OUR PRODUCT</h1>
 
-    <div class="product_header" type="header">
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+
+    <nav  id="menu">
             <a href="product_electronic.html" ><h3>Electronic</h3></a>
             <a href="product_stationry.html"><h3>Stationry</h3></a>
             <a href="product_clothes.html"><h3>Clothes</h3></a>
             <a href="product_sports"><h3>Sports</h3></a>
             <a href="product_home.html"><h3>Home product</h3></a>
-    </div>
-    <div class="product_images" type="card-container">
-        <img style="width: 300px;" src="../Res/product_images/cloth1.webp" >
-        <!-- <figcaption>price is 100Rsc</figcaption> -->
-        <img style="width: 200px;" src="../Res/product_images/iphone.png">
-        <img style="width: 300px;" src="../Res/product_images/shoes.webp">
-        <img style="width: 300px;" src="../Res/product_images/sports1.webp">
-        <img style="width: 300px;" src="../Res/product_images/shoes.webp">
-    </div>
+    </nav>
+
+</header>  
+
+<div class="container">
+
+
+    <div class="card">
+  <img src="../Res/product_images/iphone.png" alt="Product Image">
+  <h2>Iphone Pro Max</h2>
+  <p class="price">₹00</p>
+  <p class="desc">Free For You.</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="card">
+  <img src="../Res/product_images/cloth1.webp" alt="Product Image">
+  <h2>Abidas Cloths</h2>
+  <p class="price">₹99</p>
+  <p class="desc">Original not duplicate. This is perfect price.</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="card">
+  <img src="../Res/product_images/shoes.webp" alt="Product Image">
+  <h2>Lakhani Shoes</h2>
+  <p class="price">₹99999</p>
+  <p class="desc">This is original .</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="card">
+  <img src="../Res/product_images/sports1.webp" alt="Product Image">
+  <h2>Sports </h2>
+  <p class="price">₹1999</p>
+  <p class="desc">For only Balram because I don't know !!!</p>
+  <button>Add to Cart</button>
+</div>
+
+
+</div>
+
+
 </body>
+<script src="../JavaScript/product.js"></script>
 </html>
