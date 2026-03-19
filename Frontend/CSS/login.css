@@ -53,7 +53,7 @@ input[type="checkbox"] {
   margin: 20px;
   background-color: #0d05e7;
   color: white;
-  border: none;
+  border: 1px solid #000000;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -109,8 +109,8 @@ footer {
   #login_box {
     background-color: rgb(124, 137, 238);
     width: 70vw;
-    height: 70vh;
-    margin: 20% auto;
+    height: 50vh;
+    margin: 30% auto;
     padding: 20px;
     text-align: center;
     justify-content: center;
@@ -123,19 +123,15 @@ footer {
     font-size: 30px;
   }
 
+ 
   #login_button {
     width: 90%;
     height: 10%;
-    font-size: 60px;
-  }
-
-  #login_button {
-    width: 90%;
     padding: 10px;
     margin: 20px;
     background-color: #f9f111;
     color: white;
-    border: none;
+    border: 2px solid #000000;
     border-radius: 5px;
     cursor: pointer;
     font-size: 35px;
@@ -191,7 +187,7 @@ footer {
     box-shadow: 0 0 25px rgba(20, 203, 75, 0.3);
     width: 70vw;
     height: 50vh;
-    margin: 20% auto;
+    margin: 30% auto;
     padding: 20px;
     text-align: center;
     justify-content: center;
