@@ -1,6 +1,14 @@
 {
     "configurations": [
         {
+            "name": "http://10.106.116.180:3000/Frontend/HTML/seller.html",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://10.106.116.180:3000/Frontend/HTML/seller.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+        {
             "type": "msedge",
             "name": "http://127.0.0.1:3000/index.html",
             "request": "launch",

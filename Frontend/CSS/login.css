@@ -9,6 +9,11 @@ body {
   padding: 20px;
 }
 
+#logo{
+  width: 100px;
+  padding: 5px 45.4px;
+}
+
 #login_box {
   background-color: rgb(124, 137, 238);
   /* opacity: 20%; */
@@ -16,8 +21,8 @@ body {
   width: 23vw;
   height: 70vh;
   margin-top: 3%;
-  margin-left: 12%;
-  padding: 30px;
+  margin-left: 6%;
+  padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   /* text-align: center; */

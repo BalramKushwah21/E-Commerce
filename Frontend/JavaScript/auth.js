@@ -60,3 +60,16 @@ if (loginForm) {
   });
 }
  
+
+var tl=gsap.timeline()
+
+tl.to("#logo", {
+  
+  duration:0.7,
+  delay:0.1,
+  rotation:360,
+  scale:1.5,
+  borderRadius:"50%"
+})
+
+

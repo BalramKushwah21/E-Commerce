@@ -7,6 +7,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#logo{
+  width: 100px;
+  padding: 25px 45.4px;
+}
+
 h1 {
   margin: 2% 0px 3% 0px;
   color: #000000;
@@ -21,9 +26,9 @@ h1 {
   background-color: rgb(124, 137, 238);
   width: 25vw;
   height: 72vh;
-  margin-top: 3%;
+  margin-top: 0.3%;
   margin-left: 15%;
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }

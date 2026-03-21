@@ -1,18 +1,34 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  position: relative;
+h1{
+  size: bold;
 }
 
 /* Menu style */
-nav {
-  display: flex;
-  gap: 20px;
+
+#logo{
+  width: 90px;
 }
 
+#menu{
+  
+  /* background-color: rgb(224, 224, 233); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+ 
+#right_menu{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+
+
 /* 3-dot icon hidden on desktop */
+
+
 .menu-icon {
   font-size: 25px;
   cursor: pointer;
@@ -70,7 +86,7 @@ nav {
 @media (orientation: portrait ) and (max-width: 600px) {
 
   
-  nav {
+  /* #manu {
     display: none;
     position: absolute;
     top: 60px;
@@ -80,11 +96,11 @@ nav {
     border-radius: 5px;
     flex-direction: column;
 
-    z-index: 999; /*✅ FIX: brings menu above cards*/
+    z-index: 999; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
+  } */
 
-  nav a {
+  #manu a {
     display: block;
     padding: 10px;
   }
@@ -98,3 +114,4 @@ nav {
 #menu.show {
   display: flex;
 }
+
