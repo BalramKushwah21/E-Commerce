@@ -83,10 +83,10 @@ h1{
 } */
 
 
-@media (orientation: portrait ) and (max-width: 600px) {
+@media (orientation: portrait ) and (max-width: 500px) {
 
   
-  /* #manu {
+  #manu {
     display: none;
     position: absolute;
     top: 60px;
@@ -98,7 +98,7 @@ h1{
 
     z-index: 999; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  } */
+  }
 
   #manu a {
     display: block;

@@ -125,6 +125,11 @@ h1 {
 }
 
 
+#logo{
+  width: 150px;
+  padding: 65px 150px;
+}
+
   #signup_box {
     background-color: rgb(124, 137, 238);
     /* opacity: 20%; */

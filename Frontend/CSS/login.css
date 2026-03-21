@@ -1,5 +1,7 @@
 body {
   display: flex;
+  flex-direction: column;
+
   background-image: url("../Res/bg_image/login_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +26,7 @@ body {
   margin-left: 6%;
   padding: 25px;
   border-radius: 10px;
+  flex-direction: column;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   /* text-align: center; */
 }
@@ -120,6 +123,12 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+#logo{
+  width: 150px;
+  padding: 55px 110px;
+}
+
+
   #login_box {
     background-color: rgb(124, 137, 238);
     width: 70vw;
@@ -206,6 +215,11 @@ h1 {
     text-align: center;
     justify-content: center;
   }
+
+  #logo{
+  width: 150px;
+  padding: 55px 110px;
+}
 
   input[type="text"],
   input[type="password"] {
