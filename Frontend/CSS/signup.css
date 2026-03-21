@@ -218,3 +218,10 @@ h1 {
     font-size: 40px;
   }
 }
+
+@media (max-width: 600px){
+  #logo{
+  width: 150px;
+  padding: 65px 150px;
+}
+}
